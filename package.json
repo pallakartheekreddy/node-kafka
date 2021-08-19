@@ -1,0 +1,22 @@
+{
+  "name": "node-kafka-poc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:producer": "node producer/index.js",
+    "start:producerNew": "node producer/app.js",
+    "start:consumer": "node consumer/index.js",
+    "start:consumerNew": "node consumer/app.js",
+    "startDocker": "./start-docker.sh",
+    "stopDocker": "docker-compose down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avsc": "^5.6.2",
+    "kafka-node": "^5.0.0",
+    "node-rdkafka": "^2.10.1"
+  }
+}
